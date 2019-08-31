@@ -1,10 +1,9 @@
 <template>
   <div class="utveckling">
     <div class="nav">
-      <h1>
-        Marcus
-        <br />Andersson
-      </h1>
+      <router-link to="/">
+        <h1>Marcus<br/>Andersson</h1>
+      </router-link>
       <router-link to="/about">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -85,7 +84,7 @@ h4 {
   background-color: #19232d;
 }
 .content p {
-  font-size: 24px;
+  font-size: 1.8vw;
   text-align: left;
   color: white;
   font-family: 'Nunito', sans-serif;
@@ -99,7 +98,7 @@ h4 {
 }
 .columns {
   width: 90%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   
 }
 .column {
@@ -108,6 +107,9 @@ h4 {
 .column .image {
   width: 100%;
   margin: auto;
+}
+.image img {
+  height: 100%;
 }
 figure {
   display: flex;
@@ -120,7 +122,7 @@ figure {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 #menuToggle {
@@ -176,17 +178,19 @@ figure {
   }
   .columns {
     width: 98%;
+    margin-top: -10vw;
   }
   .content h3 {
-    font-size: 10vw;
+    font-size: 15vw;
     margin-top: -100px;
   }
   .content p {
     text-align: center;
     margin-bottom: 15px;
+    font-size: 5vw;
   }
   h4 {
-    font-size: 8.5vw;
+    font-size: 9.5vw;
     margin-bottom: 0px;
     margin-top: 10px;
   }

@@ -42,7 +42,7 @@ export default {
   background-image: url("../assets/test.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -150px;
+  /* background-position-y: -150px; */
 }
 h1 {
   /* margin-left: 60px; */
@@ -102,15 +102,18 @@ h1 {
 @media screen and (max-width: 500px) {
   .home {
     background-position-y: 0px;
-    background-position-x: -750px;
+    background-position-x: -150px;
+  }
+  .nav {
+    margin-top: 47px!important;
   }
   h1 {
     font-size: 40px;
     line-height: 35px;
   }
-  .nav {
+  /* .nav {
     width: 85%;
-  }
+  } */
   .content {
     display: flex;
     flex-direction: column;

@@ -1,10 +1,9 @@
 <template>
   <div class="om">
     <div class="nav">
-      <h1>
-        Marcus
-        <br />Andersson
-      </h1>
+      <router-link to="/">
+        <h1>Marcus<br/>Andersson</h1>
+      </router-link>
       <router-link to="/about">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -117,7 +116,7 @@ h1 {
   font-family: "hwt artz", sans-serif;
   font-size: 7vw;
   align-self: flex-start;
-  margin-top: -300px;
+  margin-top: -23.5vw;
   margin-left: 5vw;
 }
 
@@ -128,7 +127,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .columns {
@@ -139,23 +138,23 @@ h1 {
 }
 .columns .header {
   font-family: 'hwt artz', sans-serif;
-  font-size: 3.5vw;
+  font-size: 3.7vw;
   color: black;
   margin-top: -100px;
 }
 .columns p {
-  font-size: 22px;
+  font-size: 1.8vw;
   font-family: "Nunito", sans-serif;
   text-align: left;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 .columns p a {
-  font-size: 22px;
+  font-size: 1.8vw;
   color: #01b5b4;
   font-weight: 600;
 }
 .social-media {
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
 }
 ul {
   list-style-type: none;
@@ -170,7 +169,7 @@ li a:hover {
 }
 li a {
   color: hsla(0, 0%, 20%, 1);
-  font-size: 13px;
+  font-size: 1vw;
   /* color: rgba( 45, 55, 65, .85 );           ALTERNATIVE COLOR*/
   text-decoration: none;
 }
@@ -255,6 +254,13 @@ li a {
   .columns {
     width: 98%;
     flex-direction: column;
+    margin-top: -4vw;
+  }
+  .columns p, .columns p a {
+    font-size: 5vw;
+  }
+  .social-media a {
+    font-size: 12px;
   }
   .image {
     margin-bottom: 70px;
@@ -264,13 +270,15 @@ li a {
     color: white;
   }
   .content {
-    margin-top: 400px;
+    margin-top: 200px;
+    width: 100vw;
   }
   .content h3 {
-    font-size: 10vw;
+    font-size: 15vw;
+    margin-top: -100px;
   }
   .social-media {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 }
 </style>

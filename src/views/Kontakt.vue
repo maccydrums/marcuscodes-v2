@@ -54,8 +54,8 @@
               </a>
             </li>
           </figure>
-          <a href="mailto:hej@marcuscodes.se">hej@marcuscodes.se</a>
-          <p>076-118 48 57</p>
+          <a class="mail" href="mailto:hej@marcuscodes.se">💻 hej@marcuscodes.se</a>
+          <p>📞 076-118 48 57</p>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@ h1 {
 }
 .content {
   width: 100%;
-  height: 400px;
+  height: 28vw;
   font-size: 3vw;
   line-height: 3.8vw;
   margin-top: 25vw;
@@ -96,13 +96,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: #19232d;
-
 }
 .content h3 {
   font-family: "hwt artz", sans-serif;
   font-size: 7vw;
   align-self: flex-start;
-  margin-top: -170px;
+  margin-top: -13.5vw;
   margin-left: 5vw;
 }
 
@@ -113,13 +112,13 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .info {
-  margin-top: 50px;
+  margin-top: 4vw;
   width: 90vw;
-  height: 400px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   font-family: 'nunito', sans-serif;
@@ -134,9 +133,13 @@ h1 {
 .right-aside {
   flex: 1;
   flex-direction: column;
+  text-align: left;
 }
 .right-aside a {
   color: white;
+}
+.right-aside p, .right-aside .mail {
+  margin-left: 8vw;
 }
 .right-aside a:hover {
   color: grey;
@@ -211,6 +214,7 @@ li a {
   }
   .content h3 {
     margin-top: -100px;
+    font-size: 15vw;
   }
   .content {
     margin-top: 200px;
@@ -218,14 +222,19 @@ li a {
   }
   .left-aside p {
     margin-top: 20px;
-    font-size:25px;
-    margin-bottom: 20px;
+    font-size: 6.8vw;
+    line-height: 30px;
   }
   .right-aside p, a {
-    font-size: 25px;
+    font-size: 6.8vw;
+    line-height: 9vw;
   }
-  .content h3 {
-    font-size: 10vw;
+  .right-aside .mail a, .right-aside p {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .right-aside .social-media a {
+    font-size: 4vw;
   }
   .info {
     flex-direction: column;

@@ -2,30 +2,42 @@
   <div class="about">
     <div class="nav">
       <router-link to="/">
-        <h1>Marcus<br/>Andersson</h1>
+        <h1>
+          Marcus
+          <br />Andersson
+        </h1>
       </router-link>
       <a @click="$router.go(-1)">
         <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </a>
-      
     </div>
     <div class="content">
       <div class="left-aside">
         <ul>
-          <router-link to="/"><li>Hem</li></router-link>
-          <router-link to="/om-mig"><li>Om mig</li></router-link>
-          <router-link to="/utveckling"><li>Utveckling</li></router-link>
-          <router-link to="/portfolio"><li>Portfolio</li></router-link>
-          <router-link to="/kontakt"><li>Kontakta mig</li></router-link>
+          <router-link to="/">
+            <li>Hem</li>
+          </router-link>
+          <router-link to="/om-mig">
+            <li>Om mig</li>
+          </router-link>
+          <router-link to="/utveckling">
+            <li>Utveckling</li>
+          </router-link>
+          <router-link to="/portfolio">
+            <li>Portfolio</li>
+          </router-link>
+          <router-link to="/kontakt">
+            <li>Kontakta mig</li>
+          </router-link>
         </ul>
       </div>
       <div class="right-aside">
-        <a href="mailto:hej@marcuscodes.se">hej@marcuscodes.se</a>
+        <a href="mailto:hej@marcuscodes.se"> hej@marcuscodes.se</a>
         <p>076 118 48 57</p>
       </div>
     </div>
@@ -44,12 +56,12 @@
 }
 h1 {
   font-size: 50px;
-  font-family: 'hwt artz', sans-serif;
+  font-family: "hwt artz", sans-serif;
   color: white;
   text-align: left;
   line-height: 42px;
 }
-a {  
+a {
   text-decoration: none;
 }
 .nav {
@@ -74,33 +86,37 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: -2.1vw;
+  /* margin-left: -2.1vw; */
 }
 .left-aside ul li {
   text-align: left;
   font-size: 4vw;
-  margin-left: 60px;
   text-decoration: none;
   list-style: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  line-height: 5vw;
+}
+.left-aside ul {
+  margin-left: 4.8vw;
 }
 .left-aside a {
   color: white;
 }
 .left-aside li:hover {
-  color: grey;  
+  color: grey;
 }
 .right-aside {
   /* background-color: red; */
-  flex: 1.0;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: flex-start; */
 }
-.right-aside p, .right-aside a {
+.right-aside p,
+.right-aside a {
   font-size: 4vw;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: left;
   color: white;
 }
@@ -116,24 +132,25 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    justify-content: center;
+    width: 100vw;
     height: 100vh;
-    font-size: 28px;
-  }
-  .nav {
-    width: 85%;
   }
   .left-aside {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin-top: -60px;
+    margin-top: -30vw;
   }
   .left-aside ul li {
-    font-size: 40px;
+    font-size: 11vw;
     text-align: center;
     margin-left: 0px;
+    line-height: 15vw;
+  }
+  .left-aside ul {
+    margin: 0px;
   }
   .right-aside {
     /* flex: 1;
@@ -142,13 +159,10 @@ a {
     width: 100vw; */
     display: none;
   }
-  .right-aside p, .right-aside a {
-    font-size: 20px;
-  }
 }
 
 #menuToggle {
-  display:block;
+  display: block;
   position: relative;
   top: 0;
   left: 5px;

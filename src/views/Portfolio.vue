@@ -119,7 +119,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #menuToggle {
