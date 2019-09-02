@@ -32,7 +32,7 @@
             <li>Portfolio</li>
           </router-link>
           <router-link to="/kontakt">
-            <li>Kontakta mig</li>
+            <li>Kontakt</li>
           </router-link>
         </ul>
       </div>

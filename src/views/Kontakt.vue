@@ -14,13 +14,13 @@
       </router-link>
     </div>
     <div class="content">
-      <h3>kontakta mig</h3>
+      <h3>kontakt</h3>
       <div class="info">
         <div class="left-aside">
           <p>Är du intresserad av att jobba med mig eller bara vill diskutera en idé? Hör av dig till mig så återkommer jag så fort jag kan!</p>
         </div>
         <div class="right-aside">
-          <figure class="social-media has-text-centered">
+          <!-- <figure class="social-media has-text-centered">
             <li class="pv3 ph2 ma0 link grow">
               <a href="https://twitter.com/maccydrums" target="_blank">
                 <font-awesome-icon :icon="['fab', 'twitter']" size="3x" style="color: #38A1F3;" />
@@ -53,9 +53,9 @@
                 />
               </a>
             </li>
-          </figure>
-          <a class="mail" href="mailto:hej@marcuscodes.se">💻 hej@marcuscodes.se</a>
-          <p>📞 076-118 48 57</p>
+          </figure> -->
+          <a class="mail" href="mailto:hej@marcuscodes.se">hej@marcuscodes.se</a>
+          <p>076-118 48 57</p>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@ h1 {
 }
 .content {
   width: 100%;
-  height: 28vw;
+  height: 25vw;
   font-size: 3vw;
   line-height: 3.8vw;
   margin-top: 25vw;
@@ -126,6 +126,7 @@ h1 {
 }
 .left-aside {
   flex: 1;
+  /* background-color: grey; */
 }
 .left-aside p {
   text-align: left;
@@ -133,13 +134,13 @@ h1 {
 .right-aside {
   flex: 1;
   flex-direction: column;
-  text-align: left;
+  align-self: center;
+  justify-content: center;
+  /* background-color: lightgreen; */
+  height: 16vw;
 }
 .right-aside a {
   color: white;
-}
-.right-aside p, .right-aside .mail {
-  margin-left: 8vw;
 }
 .right-aside a:hover {
   color: grey;

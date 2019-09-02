@@ -38,7 +38,7 @@
             till verklighet.
           </p>
           
-          <figure class="social-media has-text-centered">
+          <!-- <figure class="social-media has-text-centered">
             <li class="pv3 ph2 ma0 link grow">
               <a href="https://twitter.com/maccydrums" target="_blank">
                 <font-awesome-icon :icon="['fab', 'twitter']" size="3x" style="color: #38A1F3;" />
@@ -71,10 +71,43 @@
                 />
               </a>
             </li>
-          </figure>
+          </figure> -->
         </figure>
       </div>
     </div>
+    <div class="education">
+    </div>
+    <div class="kunskaper">
+        <h1>Kunskap</h1>
+          <div class="education-header">
+            <i class="fab fa-vuejs"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-git-square"></i>
+            <i class="fab fa-npm"></i>
+            <i class="fab fa-node"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-digital-ocean"></i>
+          </div>
+          <div class="columns is-variable is-4 grid-xl">
+            <figure class="column">
+              <ul>
+                <li>JavaScript ES6</li>
+                <li>HTML5 & CSS with SEO</li>
+                <li>Vue.js</li>
+                <li>React.js</li>
+                <li>Agile Project Methods</li>
+              </ul>
+            </figure>
+            <figure class="column">
+              <ul>
+                <li>UX & UI Design</li>
+                <li>Test-driven Development</li>
+                <li>Databases (SQL/NoSQL)</li>
+                <li>Cloud Services (Docker & Digital Ocean)</li>
+              </ul>
+            </figure>
+          </div>
+      </div>
   </div>
 </template>
 
@@ -110,7 +143,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: #19232d;
-
 }
 .content h3 {
   font-family: "hwt artz", sans-serif;
@@ -134,7 +166,8 @@ h1 {
   color: white;
   width: 100%;
   margin-top: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
+
 }
 .columns .header {
   font-family: 'hwt artz', sans-serif;
@@ -156,22 +189,82 @@ h1 {
 .social-media {
   margin-bottom: 2vw;
 }
-ul {
+.social-media ul {
   list-style-type: none;
   padding: 0;
 }
-li {
+.social-media li {
   display: inline-block;
   margin: 0 10px;
 }
-li a:hover {
+.social-media li a:hover {
   color: rgb(0, 0, 0);
 }
-li a {
+.social-media li a {
   color: hsla(0, 0%, 20%, 1);
   font-size: 1vw;
   /* color: rgba( 45, 55, 65, .85 );           ALTERNATIVE COLOR*/
   text-decoration: none;
+}
+.education {
+  width: 100%;
+  min-height: 650px;
+  background-image: url('../assets/backend.jpg');
+  background-position: center -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+.kunskaper {
+  width: 100%;
+  background-color: #19232d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.education-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 30px;
+}
+.education-header i {
+  margin: 0.8vw;
+  font-size: 4vw;
+  margin-top: 30px;
+  color: white;
+}
+.kunskaper h1 {
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+}
+.kunskaper .columns {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.kunskaper .columns ul {
+  list-style-type: initial;
+  font-family: 'nunito', sans-serif;
+  font-size: 2.9vw;
+  margin-bottom: 80px;
+  list-style-position: inside;
+  text-align:left;
+  margin-left: 4vw;
+}
+.kunskaper .columns ul li{
+  color: white;
 }
 
 #menuToggle {
@@ -279,6 +372,25 @@ li a {
   }
   .social-media {
     margin-bottom: 20px;
+  }
+  .kunskaper h1 {
+    font-size: 12vw;
+  }
+  .education-header i {
+    font-size: 10vw;
+    margin: 1.2vw;
+    margin-top: 30px;
+  }
+  .kunskaper .columns {
+    flex-direction: column;
+    align-self: center;
+  }
+  .kunskaper .columns ul {
+    margin-left: 0px;
+    line-height: 35px;
+  }
+  .kunskaper .columns ul li{
+    font-size: 6vw;
   }
 }
 </style>
