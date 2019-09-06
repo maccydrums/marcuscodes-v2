@@ -87,7 +87,9 @@ export default {
 }
 h1 {
   font-size: 50px;
-  font-family: "hwt artz", sans-serif;
+  font-family: 'HWTArtz';
+  font-weight: normal;
+	font-style: normal;
   color: black;
   text-align: left;
   line-height: 42px;
@@ -103,7 +105,9 @@ h1 {
   background-color: rgb(25, 35, 46);
 }
 .content h3 {
-  font-family: "hwt artz", sans-serif;
+  font-family: 'HWTArtz';
+  font-weight: normal;
+	font-style: normal;
   font-size: 7vw;
   align-self: flex-start;
   margin-top: -23.5vw;

@@ -76,7 +76,9 @@ h1 {
 .content p {
   text-align: left;
   color: #333333;
-  font-family: "hwt artz", sans-serif;
+  font-family: 'HWTArtz';
+  font-weight: normal;
+	font-style: normal;
   font-size: 3vw;
   line-height: 3.2vw;
   width: 50%;

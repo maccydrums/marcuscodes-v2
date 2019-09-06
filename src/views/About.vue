@@ -56,7 +56,9 @@
 }
 h1 {
   font-size: 50px;
-  font-family: "hwt artz", sans-serif;
+  font-family: 'HWTArtz';
+  font-weight: normal;
+	font-style: normal;
   color: white;
   text-align: left;
   line-height: 42px;
