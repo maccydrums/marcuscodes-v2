@@ -70,7 +70,7 @@ h1 {
 }
 .content span i {
   padding-right: 6px;
-  padding-top: 8px; 
+  padding-top: 0px; 
   font-size: 18px;
 }
 .content p {
