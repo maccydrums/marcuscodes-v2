@@ -47,7 +47,9 @@ export default {
 h1 {
   /* margin-left: 60px; */
   font-size: 50px;
-  font-family: 'hwt artz', sans-serif;
+  font-family: 'HWTArtz';
+  font-weight: normal;
+	font-style: normal;
   color: black;
   text-align: left;
   line-height: 42px;
@@ -118,13 +120,17 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 85%;
+    width: 90%;
     height: 100%;
   }
   .content p {
     width: 100%;
     font-size: 28px;
     line-height: 25px;
+  }
+  .content span i {
+    padding-top: 2.5vw;
+    padding-left: 2px;
   }
 }
 

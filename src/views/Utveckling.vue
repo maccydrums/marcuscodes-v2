@@ -40,14 +40,18 @@
       </div>
     </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue';
 // @ is an alias to /src
 export default {
   name: "utveckling",
-  components: {}
+  components: {
+    Footer
+  }
 };
 </script>
 

@@ -1,10 +1,9 @@
 <template>
   <div class="portfolio">
     <div class="nav">
-      <h1>
-        Marcus
-        <br />Andersson
-      </h1>
+     <router-link to="/">
+        <h1>Marcus<br/>Andersson</h1>
+      </router-link>
       <router-link to="/about">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -16,61 +15,66 @@
     </div>
     <div class="content">
       <h3>portfolio</h3>
-      <div class="columns is-tablet is-variable is-3 grid-xl">
-        <div class="column">
-          <figure class="image card">
+      <div class="kolumner">
+        <div class="kolumn">
+          <div class="image card">
             <a href="https://github.com/maccydrums/tmaguld" target="_blank">
               <img src="../assets/TMA-Guld.png" />
             </a>
-          </figure>
+          </div>
         </div>
-        <div class="column">
-          <figure class="image card">
+        <div class="kolumn">
+          <div class="image card">
             <img src="../assets/Porsche - tablet (kopia).png" />
-          </figure>
+          </div>
         </div>
       </div>
-      <div class="columns is-tablet is-variable is-4 grid-xl">
-        <div class="column">
-          <figure class="image card">
+      <div class="kolumner">
+        <div class="kolumn">
+          <div class="image card">
             <a href="https://github.com/0skar0/ReactProjectNHL" target="_blank">
               <img src="../assets/nhl.png" />
             </a>
-          </figure>
+          </div>
         </div>
-        <div class="column">
-          <figure class="image card">
+        <div class="kolumn">
+          <div class="image card">
             <a href="https://www.youtube.com/watch?v=TvoXGrYouPc" target="_blank">
               <img src="../assets/ux1.png" />
             </a>
-          </figure>
+          </div>
         </div>
       </div>
-      <div class="columns is-tablet is-variable is-4 grid-xl">
-        <div class="column">
-          <figure class="image card">
+      <div class="kolumner" style="marginBottom:50px">
+        <div class="kolumn">
+          <div class="image card">
             <a href="https://github.com/maccydrums/marcuscodes" target="_blank">
               <img src="../assets/marcuscodes.png" />
             </a>
-          </figure>
+          </div>
         </div>
-        <div class="column">
-          <figure class="image card">
+        <div class="kolumn">
+          <div class="image card">
             <a href="https://maccydrums.github.io/currency-converter" target="_blank">
               <img src="../assets/currency-converter.png" />
             </a>
-          </figure>
+          </div>
         </div>
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue';
+
 // @ is an alias to /src
 export default {
   name: "portfolio",
-  components: {}
+  components: {
+    Footer
+  }
 };
 </script>
 
@@ -82,7 +86,6 @@ export default {
   align-items: center;
 }
 h1 {
-  /* margin-left: 60px; */
   font-size: 50px;
   font-family: "hwt artz", sans-serif;
   color: black;
@@ -90,27 +93,42 @@ h1 {
   line-height: 42px;
 }
 .content {
-  width: 100vw;
+  width: 100%;
   font-size: 2.35vw;
-  margin-top: 35vw;
+  margin-top: 445px;
+  min-height:auto;
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  justify-content: flex-start;
-  margin-bottom: 50px;
-  background-color: #19232d;
-
+  align-items: center;
+  background-color: rgb(25, 35, 46);
 }
 .content h3 {
   font-family: "hwt artz", sans-serif;
   font-size: 7vw;
   align-self: flex-start;
-  margin-top: -300px;
+  margin-top: -23.5vw;
   margin-left: 5vw;
 }
+.kolumner {
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin: 10px;
+  padding: 0px;
+}
+.kolumn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .image {
-  /* box-shadow: rgb(195, 195, 195) 1px 1px 8px; */
+  box-shadow: rgb(25, 35, 46) 1px 1px 8px;
   vertical-align: middle;
+  width: 95%;
 }
 .nav {
   width: 90%;
@@ -119,7 +137,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 #menuToggle {
@@ -138,9 +156,7 @@ h1 {
   position: absolute;
   top: -7px;
   left: -5px;
-
   cursor: pointer;
-
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
 
@@ -164,23 +180,30 @@ h1 {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 40px;
     line-height: 35px;
   }
-  .content {
-    margin-top: 200px;
-  }
-  .columns {
-    width: 98%;
-  }
-  .columns {
-    align-self: center;
-  }
   .content h3 {
-    font-size: 10vw;
-    margin-top: -100px;
+    font-size: 15vw;
+    margin-top: -110px;
+  }
+  .content {
+    margin-top: 210px;
+  }
+  .kolumner {
+    flex-direction: column;
+    width: 94%;
+    margin: 0px;
+    margin-top: -7vw;
+  }
+  .kolumn {
+    margin: 0px;
+  }
+  .image {
+    margin-bottom: 10px;
   }
 }
 </style>

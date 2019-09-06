@@ -92,30 +92,35 @@
             <figure class="column">
               <ul>
                 <li>JavaScript ES6</li>
-                <li>HTML5 & CSS with SEO</li>
+                <li>HTML5 & CSS med SEO</li>
                 <li>Vue.js</li>
                 <li>React.js</li>
-                <li>Agile Project Methods</li>
+                <li>Agila projektmetoder</li>
               </ul>
             </figure>
             <figure class="column">
               <ul>
-                <li>UX & UI Design</li>
+                <li>UX & UI-design</li>
                 <li>Test-driven Development</li>
-                <li>Databases (SQL/NoSQL)</li>
+                <li>Databaser (SQL/NoSQL)</li>
                 <li>Cloud Services (Docker & Digital Ocean)</li>
               </ul>
             </figure>
           </div>
       </div>
+      <Footer/>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue';
+
 // @ is an alias to /src
 export default {
   name: "om",
-  components: {}
+  components: {
+    Footer
+  }
 };
 </script>
 
@@ -209,8 +214,8 @@ h1 {
 .education {
   width: 100%;
   min-height: 650px;
-  background-image: url('../assets/backend.jpg');
-  background-position: center -50px;
+  background-image: url('../assets/bg.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -25px;
@@ -339,13 +344,14 @@ h1 {
   transform: rotate(45deg) translate(0, 0px);
 }
 
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 40px;
     line-height: 35px;
   }
   .columns {
-    width: 98%;
+    width: 100%;
     flex-direction: column;
     margin-top: -4vw;
   }
@@ -373,6 +379,10 @@ h1 {
   .social-media {
     margin-bottom: 20px;
   }
+  .education {
+    height: 100vh;
+    background-position: center center;
+  }
   .kunskaper h1 {
     font-size: 12vw;
   }
@@ -386,7 +396,7 @@ h1 {
     align-self: center;
   }
   .kunskaper .columns ul {
-    margin-left: 0px;
+    margin-left: 9vw;
     line-height: 35px;
   }
   .kunskaper .columns ul li{

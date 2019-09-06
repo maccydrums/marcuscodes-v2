@@ -59,14 +59,18 @@
         </div>
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue';
 // @ is an alias to /src
 export default {
   name: "kontakt",
-  components: {}
+  components: {
+    Footer
+  }
 };
 </script>
 
@@ -205,6 +209,13 @@ li a {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
+
+@media screen and (max-width: 380px) {
+  .right-aside {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 40px;
